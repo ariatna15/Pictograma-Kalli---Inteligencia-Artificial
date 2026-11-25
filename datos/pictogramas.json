@@ -1,0 +1,214 @@
+{
+ "dolor_muela": {
+  "texto": "Dolor de muela",
+  "img": "img/necesidad/dolor de muela.png",
+  "emoji": "🦷",
+  "tags": [
+   "diente"
+  ]
+ },
+ "hambre": {
+  "texto": "Hambre",
+  "img": "img/necesidad/hambre.png",
+  "emoji": "😋",
+  "tags": [
+   "comer"
+  ]
+ },
+ "dentista": {
+  "texto": "Dentista",
+  "img": "img/lugares/consultorio dentista.png",
+  "emoji": "🧑‍⚕️",
+  "tags": [
+   "diente",
+   "salud"
+  ]
+ },
+ "colegio": {
+  "texto": "Colegio",
+  "img": "img/lugares/colegio.png",
+  "emoji": "🏫",
+  "tags": [
+   "estudio"
+  ]
+ },
+ "parque": {
+  "texto": "Parque",
+  "img": "img/lugares/parque.png",
+  "emoji": "🌳",
+  "tags": [
+   "juego",
+   "aire_libre"
+  ]
+ },
+ "playa": {
+  "texto": "Playa",
+  "img": "img/lugares/playa.png",
+  "emoji": "🏖️",
+  "tags": [
+   "sol",
+   "aire_libre"
+  ]
+ },
+ "restaurante": {
+  "texto": "Restaurante",
+  "img": "img/lugares/restaurante.png",
+  "emoji": "🍽️",
+  "tags": [
+   "comer"
+  ]
+ },
+ "soleado": {
+  "texto": "Soleado",
+  "img": "img/clima/soleado.png",
+  "emoji": "☀️",
+  "tags": [
+   "sol"
+  ]
+ },
+ "lluvia": {
+  "texto": "Lluvia",
+  "img": "img/clima/lluvia.png",
+  "emoji": "🌧️",
+  "tags": [
+   "agua",
+   "frio"
+  ]
+ },
+ "nevada": {
+  "texto": "Nevada",
+  "img": "img/clima/nevada.png",
+  "emoji": "❄️",
+  "tags": [
+   "frio"
+  ]
+ },
+ "abrigo": {
+  "texto": "Abrigo",
+  "img": "img/objetos/abrigo.png",
+  "emoji": "🧥",
+  "tags": [
+   "frio"
+  ]
+ },
+ "paraguas": {
+  "texto": "Paraguas",
+  "img": "img/objetos/paraguas.png",
+  "emoji": "☂️",
+  "tags": [
+   "agua"
+  ]
+ },
+ "cometa": {
+  "texto": "Cometa",
+  "img": "img/objetos/cometa.png",
+  "emoji": "🪁",
+  "tags": [
+   "juego",
+   "aire_libre"
+  ]
+ },
+ "computadora": {
+  "texto": "Computadora",
+  "img": "img/objetos/computadora.png",
+  "emoji": "💻",
+  "tags": [
+   "estudio",
+   "tecnologia"
+  ]
+ },
+ "cuaderno": {
+  "texto": "Cuaderno",
+  "img": "img/objetos/cuaderno.png",
+  "emoji": "📓",
+  "tags": [
+   "estudio"
+  ]
+ },
+ "gafas": {
+  "texto": "Gafas de sol",
+  "img": "img/objetos/gafas de sol.png",
+  "emoji": "🕶️",
+  "tags": [
+   "sol"
+  ]
+ },
+ "gorra": {
+  "texto": "Gorra",
+  "img": "img/objetos/gorra.png",
+  "emoji": "🧢",
+  "tags": [
+   "sol"
+  ]
+ },
+ "lapiz": {
+  "texto": "Lápiz",
+  "img": "img/objetos/lapiz.png",
+  "emoji": "✏️",
+  "tags": [
+   "estudio"
+  ]
+ },
+ "mochila": {
+  "texto": "Mochila",
+  "img": "img/objetos/mochila.png",
+  "emoji": "🎒",
+  "tags": [
+   "estudio"
+  ]
+ },
+ "pelota": {
+  "texto": "Pelota de playa",
+  "img": "img/objetos/pelota de playa.png",
+  "emoji": "🏐",
+  "tags": [
+   "juego",
+   "playa"
+  ]
+ },
+ "protector": {
+  "texto": "Protector solar",
+  "img": "img/objetos/protector solar.png",
+  "emoji": "🧴",
+  "tags": [
+   "sol",
+   "playa"
+  ]
+ },
+ "sombrilla": {
+  "texto": "Sombrilla",
+  "img": "img/objetos/sombrilla de playa.png",
+  "emoji": "⛱️",
+  "tags": [
+   "sol",
+   "playa"
+  ]
+ },
+ "toalla": {
+  "texto": "Toalla",
+  "img": "img/objetos/toalla de playa.png",
+  "emoji": "🧖",
+  "tags": [
+   "playa",
+   "agua"
+  ]
+ },
+ "fuente_agua": {
+  "texto": "Fuente de agua",
+  "img": "img/objetos/fuente de agua.png",
+  "emoji": "🚰",
+  "tags": [
+   "beber",
+   "agua"
+  ]
+ },
+ "cubo_pala": {
+  "texto": "Cubo y pala",
+  "img": "img/objetos/cubo y pala.png",
+  "emoji": "🪣",
+  "tags": [
+   "juego",
+   "playa"
+  ]
+ }
+}

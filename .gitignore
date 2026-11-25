@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+venv/
+*.pyc
+datos/resultados/registro_partidas.jsonl

@@ -1,0 +1,5 @@
+# Solo lo necesario para PUBLICAR el juego (sin matplotlib ni edge-tts, que solo sirven en tu PC
+# para entrenar al agente y generar la voz).
+fastapi
+uvicorn
+numpy

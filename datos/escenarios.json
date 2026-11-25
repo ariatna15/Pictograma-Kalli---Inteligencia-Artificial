@@ -1,0 +1,261 @@
+{
+ "niveles": {
+  "1": {
+   "titulo": "¿Adónde voy?",
+   "icono": "📍",
+   "voz": "Nivel uno. ¿Adónde voy?"
+  },
+  "2": {
+   "titulo": "¿Qué llevo?",
+   "icono": "🎒",
+   "voz": "Nivel dos. ¿Qué llevo?"
+  },
+  "3": {
+   "titulo": "¡Imprevisto!",
+   "icono": "⛈️",
+   "voz": "Nivel tres. ¡Imprevisto!"
+  }
+ },
+ "retos": [
+  {
+   "id": "E1",
+   "nivel": 1,
+   "pregunta": [
+    "dolor_muela"
+   ],
+   "correctos": [
+    "dentista"
+   ],
+   "cuantos": 1,
+   "opciones": [
+    "dentista",
+    "parque",
+    "colegio"
+   ],
+   "frase": "Me duele la muela. ¿Adónde voy?",
+   "pista": "Piensa: ¿quién cuida los dientes?"
+  },
+  {
+   "id": "E1b",
+   "nivel": 1,
+   "pregunta": [
+    "hambre"
+   ],
+   "correctos": [
+    "restaurante"
+   ],
+   "cuantos": 1,
+   "opciones": [
+    "colegio",
+    "restaurante",
+    "playa"
+   ],
+   "frase": "Tengo hambre. ¿Adónde voy?",
+   "pista": "Piensa: ¿dónde se come rico?"
+  },
+  {
+   "id": "E2",
+   "nivel": 2,
+   "pregunta": [
+    "playa",
+    "soleado"
+   ],
+   "correctos": [
+    "protector",
+    "toalla",
+    "gafas",
+    "sombrilla",
+    "pelota"
+   ],
+   "cuantos": 2,
+   "opciones": [
+    "protector",
+    "abrigo",
+    "toalla",
+    "cuaderno",
+    "gafas",
+    "lapiz"
+   ],
+   "frase": "Voy a la playa y hace sol. ¿Qué llevo? Elige dos cosas.",
+   "pista": "Hace sol y vamos a la playa. Piensa en cosas para el sol."
+  },
+  {
+   "id": "E4",
+   "nivel": 2,
+   "pregunta": [
+    "colegio"
+   ],
+   "correctos": [
+    "mochila",
+    "cuaderno",
+    "lapiz"
+   ],
+   "cuantos": 2,
+   "opciones": [
+    "cuaderno",
+    "pelota",
+    "lapiz",
+    "gafas",
+    "mochila",
+    "cometa"
+   ],
+   "frase": "Voy al colegio. ¿Qué llevo? Elige dos cosas.",
+   "pista": "Piensa en cosas para estudiar."
+  },
+  {
+   "id": "E6",
+   "nivel": 2,
+   "pregunta": [
+    "parque",
+    "soleado"
+   ],
+   "correctos": [
+    "gorra",
+    "cometa",
+    "gafas",
+    "sombrilla"
+   ],
+   "cuantos": 2,
+   "opciones": [
+    "abrigo",
+    "gorra",
+    "cuaderno",
+    "cometa",
+    "computadora",
+    "sombrilla"
+   ],
+   "frase": "Voy al parque y hace sol. ¿Qué llevo? Elige dos cosas.",
+   "pista": "Piensa en cosas para jugar y cuidarte del sol."
+  },
+  {
+   "id": "E7",
+   "nivel": 2,
+   "pregunta": [
+    "playa"
+   ],
+   "correctos": [
+    "cubo_pala",
+    "pelota",
+    "toalla",
+    "protector"
+   ],
+   "cuantos": 2,
+   "opciones": [
+    "cubo_pala",
+    "cuaderno",
+    "pelota",
+    "abrigo",
+    "computadora",
+    "lapiz"
+   ],
+   "frase": "Voy a la playa a jugar con la arena. ¿Qué llevo? Elige dos cosas.",
+   "pista": "Piensa en cosas para jugar en la playa."
+  },
+  {
+   "id": "E3",
+   "nivel": 3,
+   "pregunta": [
+    "parque",
+    "lluvia"
+   ],
+   "correctos": [
+    "paraguas"
+   ],
+   "cuantos": 1,
+   "opciones": [
+    "gafas",
+    "paraguas",
+    "cometa"
+   ],
+   "frase": "Estoy en el parque y empezó a llover. ¿Qué necesito?",
+   "pista": "Está lloviendo. Piensa en algo para no mojarte."
+  },
+  {
+   "id": "E5",
+   "nivel": 3,
+   "pregunta": [
+    "parque",
+    "nevada"
+   ],
+   "correctos": [
+    "abrigo"
+   ],
+   "cuantos": 1,
+   "opciones": [
+    "protector",
+    "abrigo",
+    "pelota"
+   ],
+   "frase": "Estoy en el parque y está nevando. ¿Qué necesito?",
+   "pista": "Hace mucho frío. Piensa en algo que abriga."
+  },
+  {
+   "id": "E8",
+   "nivel": 3,
+   "pregunta": [
+    "parque",
+    "soleado"
+   ],
+   "correctos": [
+    "fuente_agua"
+   ],
+   "cuantos": 1,
+   "opciones": [
+    "abrigo",
+    "fuente_agua",
+    "cuaderno"
+   ],
+   "frase": "En el parque hace mucho calor y tengo sed. ¿Qué busco?",
+   "pista": "Tienes sed. Piensa en algo para tomar agua."
+  }
+ ],
+ "mensajes_tag": {
+  "sol": "Hace sol. Piensa en cosas para cuidarte del sol.",
+  "playa": "Piensa en cosas de la playa.",
+  "estudio": "Piensa en cosas para estudiar.",
+  "juego": "Piensa en cosas para jugar.",
+  "frio": "Hace frío. Piensa en algo que abriga.",
+  "agua": "Hay agua. Piensa en algo para no mojarte.",
+  "diente": "Piensa: ¿quién cuida los dientes?",
+  "comer": "Piensa: ¿dónde se come rico?",
+  "aire_libre": "Piensa en cosas para estar afuera.",
+  "salud": "Piensa en quién nos cuida la salud.",
+  "tecnologia": "Piensa en cosas con pantalla.",
+  "beber": "Tienes sed. Piensa en algo para tomar agua."
+ },
+ "picto_tag": {
+  "sol": "soleado",
+  "playa": "playa",
+  "estudio": "colegio",
+  "juego": "parque",
+  "frio": "nevada",
+  "agua": "lluvia",
+  "diente": "dolor_muela",
+  "comer": "hambre",
+  "aire_libre": "parque",
+  "salud": "dentista",
+  "tecnologia": "computadora",
+  "beber": "fuente_agua"
+ },
+ "frases": {
+  "saludo": "¡Hola! Soy Kalli. Ayúdame a saber qué hacer en cada viaje. ¿Me ayudas?",
+  "empezar": "¡Genial! ¡Vamos de viaje!",
+  "elogios": [
+   "¡Muy bien!",
+   "¡Excelente!",
+   "¡Eso es!",
+   "¡Genial!",
+   "¡Lo lograste!"
+  ],
+  "animos": [
+   "Casi. Prueba otra vez.",
+   "Tú puedes. Intenta con otra.",
+   "Mira otra vez. ¡Tú puedes!"
+  ],
+  "falta_uno": "{nombre}. ¡Muy bien! Falta uno más.",
+  "acierto": "{nombre}. {elogio}",
+  "senalar": "Mira, aquí. Es {nombre}.",
+  "revelar": "Aquí va {nombres}. ¡Sigamos juntos!",
+  "fin": "¡Completaste el viaje! ¡Felicitaciones!"
+ }
+}

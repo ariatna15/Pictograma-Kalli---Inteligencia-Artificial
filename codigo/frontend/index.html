@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PictoViaje: El Gran Viaje</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- barra superior: marca (pulsación larga = panel del educador), progreso y sonido -->
+  <div class="topbar">
+    <div class="marca" id="marca" aria-label="PictoViaje"><span>🧳</span><span id="marcaTxt" style="font-size:20px">PictoViaje</span></div>
+    <div class="progreso" id="progreso" aria-hidden="true"></div>
+    <button class="icono" id="btnSonido" aria-label="Activar o silenciar la voz" title="Voz">🔊</button>
+  </div>
+
+  <!-- 1. INICIO -->
+  <section class="pantalla centro" id="sInicio">
+    <div class="kalli-grande" data-kalli="feliz" id="inicioKalli"></div>
+    <p id="hintKalli" hidden style="font-weight:800;margin:0">🔊 Toca a Kalli para escucharla</p>
+    <h1>¡Hola! Soy Kalli</h1>
+    <p>Ayúdame a saber qué hacer en cada viaje</p>
+    <div class="secuencia" aria-label="Cómo se juega: mira, elige, continúa">
+      <div class="paso"><img src="img/lugares/playa.png" alt="Playa"></div><span class="flecha">→</span>
+      <div class="paso">👆</div><span class="flecha">→</span>
+      <div class="paso"><img src="img/objetos/protector solar.png" alt="Protector solar"></div><span class="flecha">→</span>
+      <div class="paso">⭐</div>
+    </div>
+    <button class="btn llena" id="btnJugar">▶ Ayudar a Kalli</button>
+    <p class="creditos">Pictogramas: ARASAAC (CC BY-NC-SA)<span id="creditoMascota"></span></p>
+  </section>
+
+  <!-- 2. INTRO DE NIVEL -->
+  <section class="pantalla centro" id="sNivel" hidden>
+    <div class="kalli-nivel"><div class="kalli-mediana" data-kalli="graduado" id="nivelKalli"></div><div class="gigante" id="nvIcono"></div></div>
+    <div class="nivel-chip" id="nvNum" style="align-self:center"></div>
+    <h1 id="nvTitulo"></h1>
+    <button class="btn llena" id="btnEmpezarNivel">Vamos</button>
+  </section>
+
+  <!-- 3. JUEGO -->
+  <section class="pantalla" id="sJuego" hidden>
+    <div class="nivel-chip" id="chipNivel"></div>
+
+    <div class="escena">
+      <div class="kalli-dice" id="kalliDice" role="status" aria-live="polite" hidden></div>
+      <div class="mascota" id="mascota" data-kalli="feliz" aria-label="Kalli, la mascota guía"></div>
+      <div class="burbuja">
+        <div class="escenario" id="escenario"></div>
+        <button class="oir" id="btnOir" aria-label="Escuchar otra vez">🔊</button>
+      </div>
+    </div>
+
+    <div class="maleta" id="maleta" aria-label="Mi respuesta"></div>
+
+    <div class="pista-msg" id="pistaMsg" role="status" aria-live="polite" hidden></div>
+
+    <div class="opciones" id="opciones"></div>
+
+    <div class="pie">
+      <button class="btn-pista" id="btnPista" aria-label="Pedir una pista">
+        <span class="bomb">💡</span><span>Pista</span>
+        <span class="pips" id="pips"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 4. FINAL -->
+  <section class="pantalla centro" id="sFin" hidden>
+    <div class="kalli-grande" data-kalli="graduado" id="finKalli"></div>
+    <h1>¡Completaste<br>el viaje!</h1>
+    <div class="logros">
+      <div class="logro"><b>📍</b>Adónde voy</div>
+      <div class="logro"><b>🎒</b>Qué llevo</div>
+      <div class="logro"><b>⛈️</b>Imprevisto</div>
+    </div>
+    <button class="btn llena" id="btnOtraVez">↻ Jugar otra vez</button>
+  </section>
+</div>
+
+<!-- Aviso inferior (acierto) -->
+<div class="aviso" id="aviso" role="status" aria-live="assertive">
+  <div class="in">
+    <div class="ic kalli-mini" id="avKalli" data-kalli="celebra"></div>
+    <div class="tx" id="avTexto"></div>
+    <button class="btn" id="btnContinuar">Continuar</button>
+  </div>
+</div>
+
+<!-- Panel del educador: oculto. Se abre con pulsación larga sobre "PictoViaje",
+     con Ctrl+Mayús+E, o entrando con  ?educador  al final de la dirección. -->
+<aside id="panel" hidden aria-label="Panel del educador">
+  <header><h2>👩‍🏫 Panel del educador</h2><button id="pCerrar" aria-label="Cerrar">✕</button></header>
+  <div class="aviso-priv">Solo para educadores/terapeutas. Registro anónimo, sin datos personales.</div>
+  <div class="resumen" id="pResumen"></div>
+  <div class="acciones">
+    <button id="pJson">⬇ JSON</button><button id="pCsv">⬇ CSV</button><button id="pLimpiar">Borrar registro</button>
+  </div>
+  <div id="registro"></div>
+</aside>
+
+<!-- ?v=3: cambien el número cuando modifiquen un .js, para que el navegador no use una copia vieja -->
+<script src="js/datos-respaldo.js?v=3"></script>
+<script src="audio/indice.js?v=3" onerror="window.AUDIOS = {}"></script><!-- voz pregrabada (opcional) -->
+<script src="js/voz.js?v=3"></script>
+<script src="js/kalli.js?v=3"></script>
+<script src="js/api.js?v=3"></script>
+<script src="js/app.js?v=3"></script>
+</body>
+</html>

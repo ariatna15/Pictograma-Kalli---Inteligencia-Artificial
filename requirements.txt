@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+numpy
+matplotlib
+edge-tts        # solo para generar la voz de Kalli (codigo/backend/generar_audios.py)
