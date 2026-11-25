@@ -1,0 +1,1 @@
+# Pictograma-Kalli---Inteligencia-Artificial
